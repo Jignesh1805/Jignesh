@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A61F8DDE5A23BB9D6D109D5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0A61F8DDE5A23BB9D6D109D5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		15F8A89CD16423F186683183 /* Pods-iOSView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSView_Tests/Pods-iOSView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* iOSView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,10 +42,10 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		68E343A2824F48A553EEFFEC /* Pods-iOSView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSView_Tests/Pods-iOSView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		76347C8272C60D8F0BD7ED59 /* Pods_iOSView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		97E31970070FEFD640886391 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		97E31970070FEFD640886391 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C3711E330392C8504F1D072A /* Pods_iOSView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D467F14F85F8459FAB6FB968 /* Pods-iOSView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSView_Example/Pods-iOSView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DE16EF6C4902A675B8B61673 /* iOSView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = iOSView.podspec; path = ../iOSView.podspec; sourceTree = "<group>"; };
+		DE16EF6C4902A675B8B61673 /* iOSView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = iOSView.podspec; path = ../iOSView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FA4D3EB7B2D1F683A2645E04 /* Pods-iOSView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSView_Example/Pods-iOSView_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -337,10 +337,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iOSView_Example/Pods-iOSView_Example-frameworks.sh",
+				"${PODS_ROOT}/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds/GoogleInteractiveMediaAds.framework",
 				"${BUILT_PRODUCTS_DIR}/iOSView/iOSView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleInteractiveMediaAds.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iOSView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

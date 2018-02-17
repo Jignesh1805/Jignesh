@@ -1,5 +1,7 @@
 PODS:
-  - iOSView (0.1.0)
+  - GoogleAds-IMA-iOS-SDK (3.7.0.1)
+  - iOSView (0.1.0):
+    - GoogleAds-IMA-iOS-SDK (~> 3.7)
 
 DEPENDENCIES:
   - iOSView (from `../`)
@@ -9,7 +11,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  iOSView: 5862be7b740fc0ada5251a2652b6cd51e119c892
+  GoogleAds-IMA-iOS-SDK: 4cfa8bfa89e4922f5a3dd356f786ec28ca3f4b54
+  iOSView: 60f0e44265d85ec99a0e0d049c00b03020c50cb1
 
 PODFILE CHECKSUM: 1e753b15b4d3efed7262ec6b0d8e8557db451418
 
