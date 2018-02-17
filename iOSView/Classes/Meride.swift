@@ -10,4 +10,7 @@ public class Meride {
     public func hello(){
         print("hellooo")
     }
+    init() {
+        print("first method")
+    }
 }
