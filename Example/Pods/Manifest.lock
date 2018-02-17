@@ -1,0 +1,16 @@
+PODS:
+  - iOSView (0.1.0)
+
+DEPENDENCIES:
+  - iOSView (from `../`)
+
+EXTERNAL SOURCES:
+  iOSView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  iOSView: 5862be7b740fc0ada5251a2652b6cd51e119c892
+
+PODFILE CHECKSUM: 1e753b15b4d3efed7262ec6b0d8e8557db451418
+
+COCOAPODS: 1.4.0

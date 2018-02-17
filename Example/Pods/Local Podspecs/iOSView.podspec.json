@@ -1,0 +1,22 @@
+{
+  "name": "iOSView",
+  "version": "0.1.0",
+  "summary": "A short description of iOSView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/savankumar/iOSView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "savankumar": "jigneshrathod1805@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/savankumar/iOSView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "iOSView/Classes/**/*"
+}
