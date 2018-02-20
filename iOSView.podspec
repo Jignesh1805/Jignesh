@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
         first pod lib create
         DESC
 
-  s.homepage         = 'https://github.com/Jignesh1805/iOSView'
+s.homepage         = 'https://github.com/Jignesh1805/iOSView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'savankumar' => 'jigneshrathod1805@gmail.com' }

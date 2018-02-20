@@ -15,6 +15,8 @@
 		A5CAD156ABE25F67A8B4B59938D8DB59 /* Pods-iOSView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0029C908EB4CBEBEEE98ED63B602DD0 /* Pods-iOSView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B169956B20384EBE00F4E01A /* Meride.swift in Sources */ = {isa = PBXBuildFile; fileRef = B169956A20384EBE00F4E01A /* Meride.swift */; };
 		B169956E20384F1E00F4E01A /* DemoFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B169956D20384F1E00F4E01A /* DemoFile.swift */; };
+		B1D478DA203AC7AC00A62121 /* MeridePlayerProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D478D9203AC7AC00A62121 /* MeridePlayerProgressView.swift */; };
+		B1D478DC203AC82100A62121 /* PlayerProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D478DB203AC82100A62121 /* PlayerProgressView.swift */; };
 		E60B8CB7E7712B42FF5835658FDC6F7B /* Pods-iOSView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 945E8311E58FD1D005806F2894E98E91 /* Pods-iOSView_Example-dummy.m */; };
 		F1F3AC6D0AF8E850B865C199E9C66863 /* iOSView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3DCDEA9136EBC1FF6A947FEF2CBE83 /* iOSView-dummy.m */; };
 		F61EBB83281347914903D8807FF2C1AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
@@ -62,6 +64,9 @@
 		AB3CF2FFE0447C806417C03370FCA597 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B169956A20384EBE00F4E01A /* Meride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Meride.swift; path = iOSView/Classes/Meride.swift; sourceTree = "<group>"; };
 		B169956D20384F1E00F4E01A /* DemoFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DemoFile.swift; path = iOSView/Classes/Demo/DemoFile.swift; sourceTree = "<group>"; };
+		B1D478D7203AC73300A62121 /* PlayerProgressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PlayerProgressView.xib; path = ../../../MerideLibrary/vidPlayer/PlayerProgressView.xib; sourceTree = "<group>"; };
+		B1D478D9203AC7AC00A62121 /* MeridePlayerProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeridePlayerProgressView.swift; sourceTree = "<group>"; };
+		B1D478DB203AC82100A62121 /* PlayerProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerProgressView.swift; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		CDE93A06C6EB1558610A211FCDEE0DD7 /* Pods-iOSView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D0029C908EB4CBEBEEE98ED63B602DD0 /* Pods-iOSView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOSView_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -175,6 +180,23 @@
 			path = Demo;
 			sourceTree = "<group>";
 		};
+		B1D478D6203AC68C00A62121 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B1D478D7203AC73300A62121 /* PlayerProgressView.xib */,
+				B1D478DB203AC82100A62121 /* PlayerProgressView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B1D478D8203AC78C00A62121 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B1D478D9203AC7AC00A62121 /* MeridePlayerProgressView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		B7C52FB8B355AF63B5D9900E248DFB60 /* Pods-iOSView_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +273,8 @@
 		F35CF2FD4FB49BE5A25F2D0A94EA77C4 /* iOSView */ = {
 			isa = PBXGroup;
 			children = (
+				B1D478D8203AC78C00A62121 /* Controller */,
+				B1D478D6203AC68C00A62121 /* View */,
 				B169956C20384EF400F4E01A /* Demo */,
 				EF301C9313A7CDB964B894B6C39929C8 /* Pod */,
 				9D367D7670A54CC5B19202942E02EB9F /* Support Files */,
@@ -376,9 +400,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1D478DA203AC7AC00A62121 /* MeridePlayerProgressView.swift in Sources */,
 				F1F3AC6D0AF8E850B865C199E9C66863 /* iOSView-dummy.m in Sources */,
 				B169956E20384F1E00F4E01A /* DemoFile.swift in Sources */,
 				B169956B20384EBE00F4E01A /* Meride.swift in Sources */,
+				B1D478DC203AC82100A62121 /* PlayerProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
